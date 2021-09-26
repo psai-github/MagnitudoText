@@ -158,7 +158,7 @@ function save(){
 var text1=document.getElementById("demo").value;
 localStorage.setItem("text", text1);
 }
-let saveFile = () => {
+function saveFile(){
 
   let data = document.getElementById("demo");
   const textToBLOB = new Blob([data.value], { type: 'text/plain' });

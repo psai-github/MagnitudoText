@@ -145,9 +145,37 @@ function link(){
     document.body.appendChild(a);
     document.body.appendChild(document.createElement('br'));
 }
+function img(){
+  var img = document.createElement('img');
+
+  img.src=prompt("What is the source of this image?");
+  img.width=prompt("What should the size of the image be?")
+  // Append the anchor element to the body.
+  document.body.appendChild(img);
+  document.body.appendChild(document.createElement('br'));
+}
 function save(){
 var text1=document.getElementById("demo").value;
 localStorage.setItem("text", text1);
 }
+let saveFile = () => {
 
+  let data = document.getElementById("demo");
+  const textToBLOB = new Blob([data.value], { type: 'text/plain' });
+  const sFileName = prompt("What do you want to call this file?")+'.txt';	   // The file to save the data.
+
+  let newLink = document.createElement("a");
+  newLink.download = sFileName;
+
+  if (window.webkitURL != null) {
+      newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+  }
+  else {
+      newLink.href = window.URL.createObjectURL(textToBLOB);
+      newLink.style.display = "none";
+      document.body.appendChild(newLink);
+  }
+
+  newLink.click(); 
+}
  const savetext = setInterval(save, 1000);

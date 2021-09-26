@@ -1,4 +1,4 @@
-
+document.getElementById("demo").innerHTML = localStorage.getItem("text");
 function colorred() {
   document.getElementById("demo").style.color = "red";
   document.getElementById("h").style.color = "red";
@@ -145,3 +145,9 @@ function link(){
     document.body.appendChild(a);
     document.body.appendChild(document.createElement('br'));
 }
+function save(){
+var text1=document.getElementById("demo").value;
+localStorage.setItem("text", text1);
+}
+
+ const savetext = setInterval(save, 1000);

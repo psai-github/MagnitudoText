@@ -44,6 +44,7 @@
   background-color: #2980B9;
 }
 </style>
+
 <div class="dropup">
     <button class="dropbtn">Color</button>
     <div class="dropup-content">
@@ -92,11 +93,14 @@
       <a href="#"onclick="l()">Lobster</a>
     </div>
   </div>
-  <a class="dropbtn" href="#" onclick="link()">Add Link</a>
+
+  <a class="dropbtn" onclick="link()">Add Link</a>
+  <a class="dropbtn" href="#links">Goto Links</a>
+  <a class="dropbtn" style="float:right"href="#" onclick="window.print()">Print</a>
   <br>
-  <textarea rows="100" cols="180" id="demo"></textarea>
+  <textarea  rows="100" cols="179" id="demo"></textarea>
   <br>
-  <h2>Links:</h2>
+  <h2 id="links">Links:</h2>
   <br>
   <script src="text.js"></script>
 </body>

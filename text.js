@@ -1,116 +1,187 @@
+document.getElementById("demo").innerHTML = localStorage.getItem("text");
+function colorred() {
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("h").style.color = "red";
+}
+var font='Arial';
 
-<!DOCTYPE html>
-<html>
-
-<body>
-<style>
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+function colorblue() {
+  document.getElementById("demo").style.color = "blue";   
+  document.getElementById("h").style.color = "blue";
 }
 
-.dropup {
-  position: relative;
-  display: inline-block;
+
+
+function colorgreen() {
+  document.getElementById("demo").style.color = "green";
+  document.getElementById("h").style.color = "green";
 }
 
-.dropup-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+function bcolorblue(){
+  document.getElementById("demo").style.backgroundColor="blue";
+  document.getElementById("h").style.backgroundColor="blue";
 }
 
-.dropup-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+
+function size10() {
+    document.getElementById("demo").style.fontSize = "10px"; 
+    document.getElementById("h").style.fontSize="10px";
+  }
+  
+
+function size15() {
+  document.getElementById("demo").style.fontSize = "15px"; 
+  document.getElementById("h").style.fontSize="15px";
 }
 
-.dropup-content a:hover {background-color: #ccc}
 
-.dropup:hover .dropup-content {
-  display: block;
+
+
+function size20() {
+  document.getElementById("demo").style.fontSize = "20px"; 
 }
 
-.dropup:hover .dropbtn {
-  background-color: #2980B9;
+function size25() {
+    document.getElementById("demo").style.fontSize = "25px"; 
+  }
+
+  function size30() {
+    document.getElementById("demo").style.fontSize = "30px"; 
+  }
+
+  function size35() {
+    document.getElementById("demo").style.fontSize = "35px"; 
+  }
+
+  function size40() {
+    document.getElementById("demo").style.fontSize = "40px"; 
+  }
+
+  function size45() {
+    document.getElementById("demo").style.fontSize = "45px";  
+  }
+
+  function size50() {
+    document.getElementById("demo").style.fontSize = "50px"; 
+  }
+
+  
+
+
+
+
+
+
+function bcolorred() {
+  document.getElementById("demo").style.backgroundColor = "red";
+  document.getElementById("h").style.backgroundColor="red";
 }
-</style>
 
-<div class="dropup">
-    <button class="dropbtn">Color</button>
-    <div class="dropup-content">
-      <a href="#" onclick="colorred()">Red</a>
-      <a href="#" onclick="colorblue()">Blue</a>
-      <a href="#"onclick="colorgreen()">Green</a>
-      <a href="#"onclick="w">Black</a>
-    </div>
-  </div>
-  
-  <div class="dropup">
-    <button class="dropbtn">Back Ground Color</button>
-    <div class="dropup-content">
-      <a href="#" onclick="bcolorred()">Red</a>
-      <a href="#" onclick="bcolorblue()">Blue</a>
-      <a href="#"onclick="bcolorgreen()">Green</a>
-      <a href="#"onclick="bw()">White</a>
-    </div>
-  </div>
-  
-  
-  <div class="dropup">
-    <button class="dropbtn">Size</button>
-    <div class="dropup-content">
-      <a href="#" onclick="size10()">10</a>
-      <a href="#" onclick="size15()">15</a>
-      <a href="#"onclick="size20()">20</a>
-      <a href="#" onclick="size25()">25</a>
-      <a href="#" onclick="size30()">30</a>
-      <a href="#"onclick="size35()">35</a>
-      <a href="#" onclick="size40()">40</a>
-      <a href="#" onclick="size45()">45</a>
-      <a href="#"onclick="size50()">50</a>
-    </div>
-  </div>
-  
-  
-  
-  <div class="dropup">
-    <button class="dropbtn">Font</button>
-    <div class="dropup-content">
-      <a href="#" onclick="a()">Arial</a>
-      <a href="#" onclick="v()">Verdana</a>
-      <a href="#"onclick="i()">Impact</a>
-      <a href="#"onclick="p()">Roboto</a>
-      <a href="#"onclick="l()">Lobster</a>
-    </div>
-  </div>
 
-  <a class="dropbtn" onclick="link()">Add Link</a>
-  <a class="dropbtn" onclick="img()">Add Image</a>
-  <a class="dropbtn" href="#links">Goto Links/Images</a>
-  <a class="dropbtn" onclick="wordcount()">Word Count</a>
-  <div class="dropup">
-    <button class="dropbtn">Save As</button>
-    <div class="dropup-content">
-      <a onclick="saveFile()">.txt</a>
-    </div>
-  </div>
-  <a class="dropbtn" onclick="window.print()">Print</a>
-  <a class="dropbtn" style="float:right" target="_blank" href="https://www.pranavsai.ml">About Us</a>
-  <br>
-  <textarea  rows="100" cols="179" id="demo"></textarea>
-  <br>
-  <h2 id="links">Links/Images:</h2>
-  <br>
-  <script src="text.js"></script>
-</body>
-</html>
+
+
+
+
+function bcolorgreen() {
+  document.getElementById("demo").style.backgroundColor = "green";
+  document.getElementById("h").style.backgroundColor="green";
+}
+
+
+function a() {
+  document.getElementById("demo").style.fontFamily = "Arial";
+  document.getElementById("h").style.fontFamily="Arial";
+}
+
+
+
+function i() {
+  document.getElementById("demo").style.fontFamily = "Impact,Charcoal,sans-serif";
+  document.getElementById("h").style.fontFamily="Impact,Charcoal,sans-serif";
+}
+
+
+function v() {
+  document.getElementById("demo").style.fontFamily = "verdana,sans-serif";
+  document.getElementByid("h").style.fontFamily="verdana,sans-serif";
+}
+
+
+function p(){
+  document.getElementById("demo").style.fontFamily="Roboto";
+  document.getElementById("h").style.fontFamily="Roboto";
+}
+
+
+
+function l(){
+  document.getElementById("demo").style.fontFamily="lobster";
+}
+
+
+function bw(){
+  document.getElementById("demo").style.backgroundColor="white";
+  document.getElementById("h").style.backgroundColor="white";
+}
+function w(){
+  document.getElementById("demo").style.color="black";
+}
+function link(){
+    var a = document.createElement('a');
+				
+    // Create the text node for anchor element.
+    var link = document.createTextNode(prompt("Name of Link"));
+    
+    // Append the text node to anchor element.
+    a.appendChild(link);
+    
+    // Set the title.
+    a.title = "This is Link";
+    
+    // Set the href property.
+    a.href = prompt("Enter Link");
+    
+    // Append the anchor element to the body.
+    document.body.appendChild(a);
+    document.body.appendChild(document.createElement('br'));
+}
+function img(){
+  var img = document.createElement('img');
+
+  img.src=prompt("What is the source of this image?");
+  img.width=prompt("What should the size of the image be?")
+  // Append the anchor element to the body.
+  document.body.appendChild(img);
+  document.body.appendChild(document.createElement('br'));
+}
+function save(){
+var text1=document.getElementById("demo").value;
+localStorage.setItem("text", text1);
+}
+function wordcount(){
+  var str = document.getElementById("demo").value;
+  var wordCount = str.match(/(\w+)/g).length;
+  alert(wordCount); 
+}
+let saveFile = () => {
+
+  let data = document.getElementById("demo");
+  const textToBLOB = new Blob([data.value], { type: 'text/plain' });
+  const sFileName = prompt("What do you want to call this file?")+'.txt';	   // The file to save the data.
+
+  let newLink = document.createElement("a");
+  newLink.download = sFileName;
+
+  if (window.webkitURL != null) {
+      newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+  }
+  else {
+      newLink.href = window.URL.createObjectURL(textToBLOB);
+      newLink.style.display = "none";
+      document.body.appendChild(newLink);
+  }
+
+  newLink.click(); 
+}
+ const savetext = setInterval(save, 1000);
+ 

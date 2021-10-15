@@ -17,7 +17,7 @@ function read(){
     		iterations:1500,
     		errorThresh:0.011
 	});
-	console.log(net.run(prompt("Enter Phrase")))
+	console.log(net.run(alert("Enter Phrase")))
 	}
 
 

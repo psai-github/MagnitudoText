@@ -10,6 +10,15 @@ function colorblue() {
   document.getElementById("h").style.color = "blue";
 }
 
+function read(){
+const trainingData = [document.getElementById("demo").value];
+const net = new brain.recurrent.LSTM();
+net.train(trainingData,{
+    iterations:1500,
+    errorThresh:0.011
+});
+console.log(net.run(promt("Enter Phrase")))
+}
 
 
 function colorgreen() {

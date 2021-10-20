@@ -1,3 +1,4 @@
+//Code written by: Pranav Sai
 document.getElementById("demo").innerHTML = localStorage.getItem("text");
 function colorred() {
   document.getElementById("demo").style.color = "red";

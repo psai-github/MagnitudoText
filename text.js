@@ -24,7 +24,7 @@ function tone(){
     		erroThresh: 0.011
 		
 	});
-	alert(document.getElementById("demo").value);
+	alert(net.run(document.getElementById("demo").value));
 }
 function read(){
 	const trainingData = [document.getElementById("demo").value];

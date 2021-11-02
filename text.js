@@ -12,10 +12,13 @@ function colorblue() {
 }
 function tone(){
 	const trainingData = [
-    		{ input: 'I am super happy!', output: 'happy' },
-    		{ input: 'What a pill!', output: 'sarcastic' },
-    		{ input: 'I am super unhappy!', output: 'sad' },
-    		{ input: 'Are we there yet?', output: 'excited' }
+    		{ input: 'I am super happy!', output: 'Happy' },
+    		{ input: 'What a pill!', output: 'Sarcastic' },
+    		{ input: 'I am super unhappy!', output: 'Sad' },
+    		{ input: 'Are we there yet?', output: 'Excited' },
+		{ input: 'I am so mad!', output: 'Angry' },
+		{ input: 'soo', output: 'Sarcastic' },
+		{ input: 'HaHaHa', output: 'Joke' },
 	];
 
 	const net = new brain.recurrent.LSTM();

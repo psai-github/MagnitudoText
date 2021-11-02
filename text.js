@@ -10,7 +10,22 @@ function colorblue() {
   document.getElementById("demo").style.color = "blue";   
   document.getElementById("h").style.color = "blue";
 }
+function tone(){
+	const trainingData = [
+    		{ input: 'I am super happy!', output: 'happy' },
+    		{ input: 'What a pill!', output: 'sarcastic' },
+    		{ input: 'I am super unhappy!', output: 'sad' },
+    		{ input: 'Are we there yet?', output: 'excited' }
+	];
 
+	const net = new brain.recurrent.LSTM();
+	net.train(trainingData, {
+    		iterations: 100,
+    		erroThresh: 0.011
+});
+
+alert(document.getElementById("demo"));
+}
 function read(){
 	const trainingData = [document.getElementById("demo").value];
 	const net = new brain.recurrent.LSTM();

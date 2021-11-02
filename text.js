@@ -22,9 +22,9 @@ function tone(){
 	net.train(trainingData, {
     		iterations: 100,
     		erroThresh: 0.011
-});
-
-alert(document.getElementById("demo"));
+		
+	});
+	alert(document.getElementById("demo").value);
 }
 function read(){
 	const trainingData = [document.getElementById("demo").value];
